@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - deletes the node at index
  * @head: pointer to the first element in thr list
- * @index: index to to delete note
+ * @index: index of node to be freed
  * Return: 1 or -1
  */
 
@@ -16,7 +16,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temp = *head;
 	if (head == NULL || *head == NULL)
 		return (-1);
-	for (a = 0 ; a < index - 1 && temp != 0 ; a++)
+	for (a = 0 ; a < index - 1 && temp != NULL && index != 0 ; a++)
 		temp = temp->next;
 	if (temp == NULL)
 		return (-1);
