@@ -1,5 +1,0 @@
-#ifndef OBJECT_LIKE_MICRO_H
-#define OBJECT_LIKE_MICRO_H
-
-#define PI 3.14159265359
-#endif
